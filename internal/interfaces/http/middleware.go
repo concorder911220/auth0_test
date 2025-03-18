@@ -21,7 +21,7 @@ func InitOAuth() {
 	OAuthConfig = &oauth2.Config{
 		ClientID:     os.Getenv("GOOGLE_CLIENT_ID"),
 		ClientSecret: os.Getenv("GOOGLE_CLIENT_SECRET"),
-		RedirectURL:  "http://localhost:8080/auth/callback",
+		RedirectURL:  os.Getenv("REDIRECT_URL"),
 		Scopes:       []string{"profile", "email"},
 		Endpoint:     google.Endpoint,
 	}
