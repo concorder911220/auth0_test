@@ -11,7 +11,6 @@
     GOOGLE_CLIENT_ID=your-google-client-id
     GOOGLE_CLIENT_SECRET=your-google-client-secret
     DATABASE_URL="postgres://username:password@localhost:5432/user_service?sslmode=disable"
-    JWT_SECRET_KEY="your-jwt-secret-key"
     REDIRECT_URL="http://localhost:8080/auth/callback"
     ```
 
